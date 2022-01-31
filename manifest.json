@@ -1,0 +1,24 @@
+{
+  "name": "Keymap",
+  "action": { },
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Keymap",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "run_at": "document_end",
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content.js"]
+  }]
+}

@@ -1,0 +1,18 @@
+/** options.css */
+h1 {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    padding: 8px;
+}
+.description {
+    background-color: #f0f0f0;
+    padding: 8px;
+}
+.keys {
+    padding: 8px;
+}
+.key_form {
+    border: 1px solid silver;
+    padding: 8px;
+}
